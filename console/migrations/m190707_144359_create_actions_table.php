@@ -23,6 +23,9 @@ class m190707_144359_create_actions_table extends Migration
             'type' => $this->string(), //тип
             'duration' => $this->integer(), //Длительность в секундах
         ]);
+
+        //добавим внешний ключ для поля user_id таблицы actions
+        $this->addForeignKey('fk_users_id', 'actions', 'user_id', 'users', 'id');
     }
 
     /**

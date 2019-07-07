@@ -8,6 +8,7 @@ use yii\db\Migration;
 class m190707_134512_create_statuses_table extends Migration
 {
     protected $tableName = 'statuses';
+
     /**
      * {@inheritdoc}
      * Создаем таблицу статусов пользователей
